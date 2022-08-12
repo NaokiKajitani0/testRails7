@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tweets</h1>
+
+<div id="tweets">
+  <% @tweets.each do |tweet| %>
+    <%= render tweet %>
+    <p>
+      <%= link_to "Show this tweet", tweet %>
+    </p>
+  <% end %>
+</div>
+
+<div data-controller="hello">
+  <input data-hello-target="name" type="text">
+  <button data-action="click->hello#greet">Greet</button>
+</div>
+<div>
+  PIN: <input type="text" value="1234" readonly>
+  <button>Copy to Clipboard</button>
+</div>
