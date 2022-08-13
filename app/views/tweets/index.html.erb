@@ -2,7 +2,7 @@
 
 <h1>Tweets</h1>
 
-<div id="tweets">
+<div id="tweets" class="h-12 w-12 p-6 max-w-sm mx-auto">
   <% @tweets.each do |tweet| %>
     <%= render tweet %>
     <p>
@@ -11,6 +11,8 @@
   <% end %>
 </div>
 
+<%= link_to "new create", new_tweet_path %>
+
 <div data-controller="hello">
   <input data-hello-target="name" type="text">
   <button data-action="click->hello#greet">Greet</button>
@@ -18,4 +20,12 @@
 <div>
   PIN: <input type="text" value="1234" readonly>
   <button>Copy to Clipboard</button>
+</div>
+<div class="flex justify-between items-center">
+  <h1 class="font-bold text-4xl">Todos</h1>
+  <%= link_to 'New todo', new_tweet_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
+</div>
+
+<div id="todos" class="min-w-full">
+  <%= render @tweets %>
 </div>
