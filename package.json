@@ -1,0 +1,31 @@
+{
+  "name": "rails7_node",
+  "version": "1.0.0",
+  "description": "rail7 and node install",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaokiKajitani0/testRails7.git"
+  },
+  "keywords": [
+    "pass"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaokiKajitani0/testRails7/issues"
+  },
+  "homepage": "https://github.com/NaokiKajitani0/testRails7#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}
