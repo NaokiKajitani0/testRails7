@@ -51,22 +51,27 @@ Things you may want to cover:
         // require ??  
 
     application.js write  
+    
       import "bootstrap"  
       import "../stylesheets/application.scss"  
 
   about JS  
     write manifest.js  
+    
       //= link bootstrap.min.js  
       //= link popper.js  
     
     write Dockerfile (reflect package.json)  
+    
       RUN yarn add bootstrap jquery popper.js ($yarn add bootstrap jquery popper.js)  
       
     write application.js  
+    
       import "popper"  
       import "bootstrap"  
 
     write importmap  
+    
       pin "popper", to: 'popper.js', preload: true  
       pin "bootstrap", to: 'bootstrap.min.js', preload: true  
         ※注意点としては、まずpopperをbootstrapよりも先に読み込む必要がある。  
