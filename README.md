@@ -35,14 +35,15 @@ Things you may want to cover:
         RUN yarn add bootstrap jquery popper.js  
   
     write Gemfile  
+    
       # Use Sass to process CSS  
         gem "sassc-rails"  
- 
         gem 'bootstrap', '~> 5.1.3'  
 
     Bundle install  
 
     application.css → application.scss and application.scss write  
+    
       add:  
         @import "bootstrap";  
       remove:  
