@@ -58,6 +58,7 @@ Things you may want to cover:
   about JS  
     write manifest.js  
     
+      //= link application.js  
       //= link bootstrap.min.js  
       //= link popper.js  
     
