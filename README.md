@@ -26,6 +26,7 @@ Things you may want to cover:
 * about install bootstrap  
   about CSS  
     write Dockerfile  
+    
       # install nodejs(LTS)  
         RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - && apt-get install -y nodejs  
 
